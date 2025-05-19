@@ -6,8 +6,8 @@ st.title("🧮 BMI Calculator")
 st.write("Calculate your Body Mass Index (BMI) and see your healthy weight range based on your height.")
 
 # Input fields
-weight = st.number_input("💪 Enter your weight (kg):", min_value=10.0, max_value=200.0, step=0.1)
-height = st.number_input("📏 Enter your height (m):", min_value=0.5, max_value=2.5, step=0.01)
+weight = st.number_input("💪 Enter your weight (kg):", min_value=10.0, max_value=200.0, step=0.1, value=0.0)
+height = st.number_input("📏 Enter your height (m):", min_value=0.5, max_value=2.5, step=0.01, value=0.0)
 
 if weight > 0 and height > 0:
     bmi = weight / (height ** 2)
